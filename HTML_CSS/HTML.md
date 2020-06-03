@@ -186,7 +186,7 @@ W3C기관에 문서형식에 의해 HTML4.01을 Frameset방ㅎ식의 영어로 �
 
 
 
-- 이미지 (image) - `<img alt="" src=""/>`
+- 이미지 (image) 
 
   > 주요 속성
   >
@@ -197,6 +197,10 @@ W3C기관에 문서형식에 의해 HTML4.01을 Frameset방ㅎ식의 영어로 �
   > > height : 이미지의 세로 크기 지정
   > >
   > > src : 이미지 경로 지정
+
+```html
+<img alt="" src="" width="" heigth=""/>
+```
 
 
 

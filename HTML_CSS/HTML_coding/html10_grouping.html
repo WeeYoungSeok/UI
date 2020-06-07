@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html10</title>
+
+<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	div{
+		border: 1px dotted blue;
+		margin: 10px;
+	}
+	#body{
+		height: 400px;
+	}
+	#left{
+		width: 48%;
+		height: 90%;
+		float: left;
+	}
+	#right{
+		width: 48%;
+		height: 90%;
+		float: right;
+	}
+</style>
+</head>
+<body>
+	
+	<div id="header">
+	<!-- div는 블록요소라서 크게크게 만들어졌고 -->
+		<h1>제목</h1>
+		<div>
+			<span><a href="#">메뉴1</a></span>
+			<span><a href="#">메뉴2</a></span>
+			<span><a href="#">메뉴3</a></span>
+			<span><a href="#">메뉴4</a></span>
+			<!-- span은 이라인요소라서 작게 작게 나옴 -->
+		</div>
+	</div>
+	
+	<div id="body">
+		<div id="left">
+			<p>내용 1</p>
+		</div>
+		<div id="right">
+			<p>내용 2</p>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<address>copyright &copy; all rights reserved....</address>
+	</div>
+</body>
+</html>

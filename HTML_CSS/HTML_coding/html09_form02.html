@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html09</title>
+</head>
+<body>
+
+	<h1>select 요소</h1>
+	
+	<form action="#" method="get">
+		<fieldset>
+			<legend>여러줄 글 상자와 목록 상자</legend>
+			
+			<p>
+				<label for="reply">답글</label><br/>
+				<textarea rows="5" cols="30" id="reply" name="re"></textarea>
+			</p>
+			
+			<p>
+				과목선택
+				<select name="sel01">
+				<option value="html">HTML</option>
+				<option value="css">CSS</option>
+				<option value="javascript">JAVASCRIPT</option>
+				<option value="jquery">JQUERY</option>
+				</select>
+			</p>
+			
+			<p>
+				간식
+				<select name="sel02">
+					<optgroup label="분식">
+					<!-- 묶어줄때 사용함 선택은 못함. -->
+						<option value="dduckbokki">떡볶이</option>
+						<option value="sun-dai">순대</option>
+						<option value="mandu">만두</option>
+						<option value="tuikim">튀김</option>
+						<option value="jjolmen">쫄면</option>
+					</optgroup>
+					<optgroup label="과자">
+						<option value="pokachip">포카칩</option>
+						<option value="buttering">버터링</option>
+						<option value="mom's pie">엄마 손 파이</option>
+						<option value="chaldduckpie">찰떡파이</option>
+						<option value="kkobuckchip">꼬북칩</option>
+						<option value="homerun ball">홈런볼</option>
+					</optgroup>
+				</select>
+			</p>
+			<input type="submit" value="전송"/>
+			<!-- http://localhost:8787/UI01_HTML/html09_form02.html?re=%EC%A1%B4%EC%9E%BC%2C%EC%A1%B4%EB%A7%9B%ED%83%B1
+				 &sel01=jquery&sel02=tuikim# -->
+				 <!-- 내가 선택된것이 value로 나옴. -->
+		</fieldset>
+	</form>
+
+
+</body>
+</html>

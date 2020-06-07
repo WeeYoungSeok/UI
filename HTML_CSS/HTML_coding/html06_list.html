@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html06</title>
+</head>
+<body>
+
+	<h1>목록</h1>
+	
+	<h2>순차적 목록</h2>
+	<b>학원 오는 순서</b>
+	<ol>
+	<!-- ordered list 순서가 있음 -->
+		<li>눈을 뜬다</li>
+		<li>이불 갠다</li>
+		<li>밥을 먹는다</li>
+		<li>지하철을 탄다</li>
+		<li>내려서 걷는다</li>
+		<li>
+			학원 올라올 때
+			<ol>
+				<li>엘베 탄다</li>
+				<li>걸어 올라온다</li>
+			</ol>
+		</li>
+	</ol>
+	
+	<hr/>
+	<!-- 선긋기 -->
+	
+	<h2>비 순차적 목록</h2>
+	<b>집에 가는 순서</b>
+	
+	<ul>
+	<!-- unordered list -->
+		<li>강의실을 나간다</li>
+		<li>카드 찍는다</li>
+		<li> 내려간다
+			<ul>
+				<li>엘베 탄다</li>
+				<li>걸어내려간다</li>
+			</ul>
+		</li>
+		<li>역삼역 간다</li>
+		<li>지하철 타고 건대 간다</li>
+		<li>환승해서 상봉 간다</li>
+		<li>내려서 버스탄다</li>
+		<li>버스 내려서 걸어서 집에 들어간다</li>
+	</ul>
+		
+	<hr/>
+	<h2>정의형 목록</h2>
+	
+	<dl>
+		<dt>학원 강의시간 (dt : 제목)</dt> <!-- dt는 제목으로 나오고 dd는 들여쓰기가 됨 -->
+		<dd>오전시간</dd>
+		<!-- dd는 항목 -->
+		<dd>점심시간</dd>
+		<dd>오후시간</dd>
+		<dd>
+			<dl>
+				<dt>좋아하는 파타</dt>
+				<dd>if</dd>
+				<dd>exception</dd>
+				<dd>ui</dd>
+			</dl>
+		</dd>				
+	</dl>
+	
+</body>
+</html>

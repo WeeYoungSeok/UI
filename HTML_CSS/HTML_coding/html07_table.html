@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html07</title>
+</head>
+<body>
+
+	<!-- 반응형 ui가 나옴에 따라서 많이 안씀 table은 -->
+	<!-- div태그 안에 css코드 넣어서들 많이씀 -->
+	
+	<!-- div안에서 css코드로 위치를 잡아줌 -->
+	<!-- 옛날에는 table로 하나하나 다 잡아줫음 -->
+	<!-- 어떤 화면을 구조화할때 table을 잘 안쓴다는 의미 table은 써야함 -->
+	
+	<h1>기본 테이블 만들기</h1>
+	<!-- 저장하고나서 바로 f5눌러도 안되는 이유는 캐시에 저장되어 있어서 그럼 -->
+	<!-- 우리가 들어갔던 사이트나 그런곳은 그 링크가 보라색?으로 변해있는데 컴퓨터 캐시에 저장됨
+		  저장된 사이트는 접속 속도가 빠르다. -->
+	<table border="1" style="width: 300px;">
+	<!-- border 큰 테두리 -->
+		<tr>
+		<!-- 테이블의 로우를 의미 가로 한줄-->
+			<th>컬럼1</th>
+			<!-- 테이블의 헤드 컬럼을 의미 td랑 차이가 글씨가 두껍고 가운데 정렬됨 -->
+			<th>컬럼2</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<!-- 테이블의 값을 의미 데이터 -->
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+	
+	<h1>관련 태그 사용</h1>
+	
+	<table border="1">
+		<caption>테이블의 제목</caption>
+		
+		<colgroup>
+		<!-- col은 순서대로 첫번째 컬럼 두번째 컬럼 .. 그 테이블의 가로 넓이. -->
+			<col width="100px"/>
+			<col width="200px"/>
+			<col width="300px"/>
+		</colgroup>
+		
+		
+		<tbody>
+		<!-- 나머지 값들은 그냥 tbody -->
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>	
+		</tbody>
+		
+		<tfoot>
+		<!-- 제일 밑에 들어가는 데이터들. -->
+			<tr>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+		</tfoot>
+		
+		<thead>
+			<tr>
+				<th>컬럼1</th>
+				<th>컬럼2</th>
+				<th>컬럼3</th>
+			</tr>
+		</thead>
+		<!-- thead 해당 테이블의 맨위 -->
+		
+	</table>
+	
+	<h1>테이블 셀 병합하기</h1>
+	
+	<table border="1">
+		<caption>병합 테이블</caption>
+		<thead style="background-color: gray;">
+		<!-- ;은 나중에 저 뒤에 문장이 더 붙거나 css 코드가 뭍으면 백그라운드 명령이 끝났다라고 명시해줘야함 -->
+		<!-- 현재 상태에서는 크게 상관없다. -->
+			<tr>
+				<th>컬럼1</th>
+				<th>컬럼2</th>
+				<th>컬럼3</th>
+				<th>컬럼4</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2">1 (세로-열-합치기) </td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td colspan="2">7 (가로-행-합치기)</td>
+				<td>8</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">가로-행-합치기</td>
+			</tr>
+		</tfoot>
+	</table>
+	
+	
+</body>
+</html>

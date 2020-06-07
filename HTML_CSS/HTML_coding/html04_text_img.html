@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html04</title>
+</head>
+<body>
+
+	<h1>Text</h1>
+	
+	<p>
+		<b>진하게(&lt;b&gt;)</b><br/>
+		<strong>진하게(&lt;strong&gt;)</strong><br/>
+		<em>기울임(&lt;em&gt;)</em><br/>
+		<small>작은 텍스트 표기 (&lt;small&gt;)</small>코멘트<br/>
+		윗<sup>첨자</sup>(&lt;sup&gt;)<br/>
+		아래<sub>첨자</sub>(&lt;sub&gt;)<br/>
+		<ins>내용 추가(&lt;ins&gt;)</ins><br/>
+		<del>내용 삭제(&lt;del&gt;)</del><br/>
+	</p>
+	
+	<hr/>
+	
+	<h1>img</h1>
+	
+	<img alt="이성경" src="image/a.jpg" width = "250px" height = "300px"/>
+	<!-- alt는 해당 그림에 대한 경로가 뭔가 띄워지지 않았을때 대체할 텍스트 -->
+	<!-- ./image/a.jpg 앞에 ./가 생략된 것이다. -->
+	<!-- /는 최상위 폴더 ./는 현재 디렉토리에서 찾자 ../는 현재 디렉토리 바로위로 가서 거기서 찾자 -->
+	<!-- ./는 고로 WebContent 디렉토리에서 image라는 폴더밑에 a.jpg를 가져오자 -->
+	<!-- 그냥 /로 하면 톰캣 폴더에서 찾게됨 최상위 폴더가 톰캣 폴더 -->
+	
+	<!-- 
+	px : 픽셀(해상도별 상대크기)
+	pt : (글자)포인트 (1pt = 약 0.72인치)
+	%, em, rem : 지정/상속 등에 대한 백분율 (상대크기) (화면이 커졋다가 작아지는경우 내 부모크기를 몇퍼센트 보여주겟다 등)
+	 -->
+	 
+	 <h3>이미지에 링크 걸기</h3>
+	 <a href = "index.html" title = "go index!!">
+	 <img alt="test" src="image/a.jpg" width="125px" height="150px" />
+	 </a>
+	 
+	 <h3>이미지 맵</h3>
+	 <img alt="히히" src="image/a.jpg" weidth = "125px" height = "150px" usemap = "#my"/>
+	 <!-- my라는 이름을 가진 맵을 사용하겠다 -->
+	 <map name = "my">
+	 	<area alt = "" shape="rect" coords = "25,25,75,75" href="index.html" title="가즈아 인덱스!"/>
+	 	 <!-- area는 사각형 속성 25.25부터 75.75까지 사각형을 만들거임 그거 클릭하면 index.html로 가짐
+	 	  title은 가즈아 인덱스 -->
+	 </map>
+	 
+	 
+  
+</body>
+</html>

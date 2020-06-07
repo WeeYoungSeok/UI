@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css01</title>
+<!-- text/css는 css파일형태로 실행할거야 라는소리..?  -->
+<!--
+<link
+	href="resources/css/basic.css"
+	rel="stylesheet"
+	type="text/css"
+/>
+	href : 파일 경로
+	rel  : 연결 대상의 속성 (stylesheet로 만들어져 있다. = style과 관련된 내용이다.)
+	type : 해당 파일의 정보값 (text로 작성되어 있으며, css 기능을 한다.)
+	 -->
+<style type="text/css">
+	@import url("resources/css/basic.css");
+	/* 주석 */
+	p{
+		background-color: pink;
+	}
+	
+	/* basic 파일에 있는 모든 것을 가져와서 사용하겠다 라는소리 */
+
+</style>
+<!-- style 태그 안에서 텍스트 형태로 작성할건데 
+		작성한 것들은 css의 기능을 함 -->
+<!-- li랑 font는 같이 혼합으로 쓰면 별로 안좋음(인라인이나 내부로 만들었을때)
+		그래서 외부에서 가져옴(css)
+			만약 네이버의 홈페이지와 검색창 등등 검색했을때 등등 다 파란색으로 바꾸고싶을때
+			전부 color로 blue로 바꾸어주어야함 그때 한번에 쉽게 바꿀 수 있게 해줌! -->
+</head>
+<body>
+
+	<h1>CSS 기본 문법</h1>
+	
+	<h3>작성방식 3가지</h3>
+	<b  style="color: blue;">1. 인라인 스타일시트: 우선순위가 높다.</b>
+	<!-- 가장 가까이 되어있는에라서 위에 링크로 b요소를 초록색으로 바꾸어도
+			쭉 실행하다가 여기 온 순간 파란색이 되어버려서 파란색으로 나옴 -->
+	<p>
+		<span>2.내부 스타일시트: html 내부에서 간단하게 작성</span><br/>
+		<b>3. 외부 스타일시트: .css 파일을 만든다.</b>
+	</p>
+	
+</body>
+</html>

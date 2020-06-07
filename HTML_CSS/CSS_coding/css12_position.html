@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css12</title>
+
+<style type="text/css">
+
+
+	/* relative : 원래 위치에서 얼만큼 움직이는지
+	   absolute : 부모의 위치(나를 감싸고 있는 부모태그의 위치)에서 상대적으로 얼만큼 움직이는지
+	   fixed : 브라우저에서 얼만큼 움직이는지
+	*/
+	#box{
+		position: relative;
+		width: 550px;
+		border: 1px solid black;
+	}
+	p{
+		width: 130px;
+		height: 80px;
+		color: #fff;
+		font-weight: bold;
+	}
+	.myred{
+		background: red;
+		position: relative;
+	}
+	.myblue{
+		background: blue;
+		position: absolute;
+		left: 100px;
+		top: 30px;
+		/* 부모의 시작위치(box 가장 왼쪽 구석)에서 왼쪽(오른쪽으로)에서 100만큼가고 위쪽에서(아래로) 30가라 */
+		z-index: 2;
+		/* 2차원의 평면이 우리쪽으로 2만큼 나왔다라고 생각하면됨
+		   3차원 생각해서 z축으로 2만큼나옴 그래서 블루가 제일앞에 나와있는거임 */
+		   
+	}
+	.mygreen{
+		background: green;
+		position: relative;
+		left: 30px;
+		top: -30px;
+		/* 아래쪽으로 가는게 + 위쪽으로 가는게 - */
+		/* 원래위치에서 오른쪽으로 30 위쪽으로 30 */
+		/* 빨강이가 가만히있는데 그린이 올라탄것이다?.. */
+		/* html은 위에서부터 순차적으로 만들어져서 레드먼저 만들어지고 그린이 만들어져서 레드위에 올라타게됨 */
+		/* 여기 css .mygreen을 맨위로 올려도 변화는 없고 html에서 <p>태그 green을 맨위로 올리면 레드가 그린 위를 올라탐 */
+	}
+	.myred:hover{z-index: 100;}
+	.myblue:hover{z-index: 100;}
+	.mygreen:hover{z-index: 100;}
+	/* 마우스 포인터 가져다 대면 z인덱스 100증가해라 그래서 마우스 올라가면 그 위체의 색이 앞으로 튀어나옴 */
+	#fixed{
+		width: 100px;
+		height: 300px;
+		background-color: silver;
+		position: fixed;
+		right: 50px;
+		top: 100px;
+	}
+</style>
+</head>
+<body>
+
+	<div id="box">
+		<p class="myred">박스의 크기와 위치를 잘 생각해보자</p>
+		<p class="mygreen">포지션은 많이 사용해봐야 한다.</p>
+		<p class="myblue">박스의 포지션 속성을 바꿔가며 테스트 해 보자.</p>
+		<!--  html은 위에서부터 순차적으로 만들어져서 레드먼저 만들어지고 그린이 만들어져서 레드위에 올라타게됨 
+		여기 css .mygreen을 맨위로 올려도 변화는 없고 html에서 <p>태그 green을 맨위로 올리면 레드가 그린 위를 올라탐  -->
+	</div>
+	
+	<div id="fixed">
+		Fixed!!
+	</div>
+	
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css09</title>
+
+<style type="text/css">
+
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#wrapper{
+		width: 600px;
+		border: 1px dotted red;
+	}
+	
+	#w01{
+		float: right;
+		width: 200px;
+		padding: 15px;
+		background-color: pink;
+	}
+	
+	#w02{
+		float: left;
+		width: 200px;
+		padding: 15px;
+		background-color: skyblue;
+	}
+	
+	#w03{
+		clear: both;
+		/* float으로 설정한걸 clear시킴(없앰) 흐름을 없앤다?느낌 (위치는 그대로)
+			right left both            both는 양쪽 다 없애버림*/
+		background-color: silver;
+		padding: 10px;
+	}
+</style>
+</head>
+<body>
+
+	<h1>제목</h1>
+	
+	<div id="wrapper">
+		<div id="w01">
+		대한민국의 배우.
+		2008년 SBS 슈퍼모델 선발대회에 참가해 렉스상을 수상하면서 모델로 데뷔했고, 
+		2011년 CF 'SK텔레콤 호핀'으로 광고계에 데뷔했다.
+		2014년 SBS 드라마 '괜찮아 사랑이야'를 통해 배우로 데뷔했다. 새하얀 피부, 도톰하고 예쁜 입술과 얼굴,
+		큰 키와 아름다운 몸매의 뛰어난 외모와 노래, 춤, 연기에 피아노 연주실력까지 두루 갖춘 배우다.
+		
+		</div>
+		<div id="w02">
+		2008년 SBS 슈퍼모델 선발대회에 참가해 렉스상을 수상하면서 모델로 데뷔하며 
+		2009년에는 포항시에서 열린 SBS '아시아 태평양 슈퍼모델 선발대회'에 참가해
+		유닉스헤어 뉴스타일상 수상과 함께 TOP 10에 진출하는 쾌거를 이뤘다.
+		</div>
+		<div id="w03">
+		2014년 7월 SBS 드라마 '괜찮아 사랑이야'를 통해 본격적인 배우의 길을 걷는다. 
+		삐딱한 불량소녀 오소녀로 열연을 펼쳐 드라마 첫 데뷔와 동시에 포털사이트 실시간 검색어 1위를 기록하며 시청자들과 네티즌들의 뜨거운 관심을 모았다. 
+		오소녀는 반항기 가득한 고등학생에서 카페 아르바이트를 시작하게 되면서 점차 세상의 따뜻함을 배워가는 인물이다.
+		</div>
+	</div>
+</body>
+</html>
